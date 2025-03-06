@@ -1,0 +1,368 @@
+1	which of the patients with abdominal pain remained in the hospital for more than 3 days?
+2	which patients are diagnosed with peritoneal adhesions and have a lab test category of blood gas?
+3	which black/african american patients were born before the year 2052?
+4	which patients less than 61 years have drug code foli1?
+5	which patients are admitted before the year 2167 and followed the procedure endovasc embol hd/nk ves?
+6	the  female patients who had other closed [endoscopic] biopsy of biliary duct or sphincter of oddi.
+7	provide the  patients who had other body fluid lab test and were hospitalized for more than 2 days.
+8	which patients are suffering from pneumonia primary disease?
+9	which patients undertook base drug type and lab test for uric acid?
+10	which patients were diagnosed with an unspecified disorder of kidney and ureter and treated with a main drug type?
+11	tell me the  patients admitted before 2155 who had homocysteine lab test.
+12	among the patients who were treated with pravastatin, which of them were aged below 72?
+13	which are the  patients under the age of 86 whose drug code is levobase2?
+14	which black/african american patients had the diagnosis short title acute respiratory failure?
+15	which of the patients admitted before the year 2144 were dead/expired at discharge?
+16	provide the  patients whose diagnosis short title is schizophrenia nos-unspec and lab test abnormal status is abnormal
+17	calculate the  patients with excision or destruction of other lesion or tissue of heart, endovascular approach, who had a lab test for hematology
+18	among patients who remained admitted in hospital for more than 20 days, calculate the  those on po therapy.
+19	which of the patients from protestant quaker belief had a lab test for urine prot. electrophoresis?
+20	which  patients with lab test fluid as pleural stayed in the hospital for more than 10 days?
+21	the  patients whose primary disease is s/p fall and lab test abnormal status is abnormal.
+22	provide the  patients whose admission type is elective and procedure long title is other radiotherapeutic procedure.
+23	the  patients whose insurance is medicare and diagnosis short title is chronic diastolic heart failure.
+24	among patients treated with drug psyllium, which of them were aged below 48?
+25	which patients had a rbc joint fluid lab test done?
+26	which patients who passed away in or before 2168 were white russian?
+27	provide the  patients taking drug via ih route who were diagnosed with other cardiac dysrhythmias.
+28	which patients are diagnosed with full incontinence-feces and followed the procedure int insert dual-cham dev?
+29	which are the  patients who had a blood lab test and were discharged to skilled nursing facility?
+30	provide the  patients whose diagnosis short title is therapeutic drug monitor and lab test category is blood gas.
+31	which dead patients were less than 41 years of age?
+32	give the  patients whose diagnosis long title is benign neoplasm of spinal meninges.
+33	provide the  patients admitted before 2197 who had an ascitic fluid lab test.
+34	which patients on iv bolus route of drug administration have the diagnoses of personal history of antineoplastic chemotherapy?
+35	which  patients with hematology as lab test category had complete atroiventricular block?
+36	which patients with secondary neuroendocrine tumor of bone had a blood gas test?
+37	which are the  patients who are taking main type drug medication and have diagnoses of other fingers amputation status?
+38	which patients have the diagnoses icd9 code as 42789?
+39	find the  patients with coronary artery as their primary disease who were born before 2110.
+40	which are the  patients whose marital status is divorced and drug route is ih?
+41	which patients are diagnosed with complete heart block and are born beforre 2200?
+42	which patients have a vitamin b complex prescription?
+43	which patients had admission type urgent and stayed in hospital for more than one day?
+44	give me the  patients under 80 years of age who had other body fluid lab tests done.
+45	give me the  patients whose admission location is emergency room admit and procedure short title is inj/inf platelet inhibit.
+46	which patients were diagnosed with other specified diseases of pericardium?
+47	which are the total  patients treated with main drug who had a lab test of body fluid for glucose?
+48	the  patients below the age of 80 whose lab test item id is 51108.
+49	which of the male patients were diagnosed with malig neo tongue nec?
+50	which patients underwent the open and other left hemicolectomy procedure?
+51	which patients with an iv bolus route of drug administration were admitted before 2170?
+52	which patients with transient ischemic attack as their primary disease had a blood test?
+53	among patients with other shock without mention of trauma, which of them received sc therapy?
+54	which patients born before the year 2170 suffered from left internal jugular vein thrombosis;left arm edema?
+55	which emergency hospital admission patients had other partial resection of small intestine?
+56	which  male patients had the diagnosis icd9 code 43491?
+57	which patients admitted for elective procedure had hemodialysis?
+58	which patients are discharged to home health care and the admission year is before 2110?
+59	which patients with admission type emergency had diagnoses titled gastrointest hemorr nos?
+60	which patients admitted before the year 2127 had a lab test for thyroxine (t4)?
+61	which are the  patients born before the year 2152 and with drug route pb?
+62	which male patients are diagnosed for intestinovesical fistula?
+63	which hypoxemia patients were admitted in or before the year 2144?
+64	which patients who are discharged to home were diagnosed with myopia?
+65	which female patients had 7742 as their diagnosis icd9 code?
+66	which male patients had the diagnosis long title atherosclerosis of native arteries of the extremities, unspecified?
+67	provide the  patients whose primary disease is newborn and lab test result is delta.
+68	give me the  patients who have been diagnosed with paroxysmal ventricular tachycardia.
+69	provide the  patients who are diagnosed with presence of cerebrospinal fluid drainage device and the lab test result is abnormal.
+70	get me the  male patients diagnosed with continuous opioid type dependence.
+71	provide the  patients whose diagnosis short title is atrial fibrillation and lab test name is prostate specific antigen.
+72	which are the  patients younger than 82 years who have bowel obstruction as their primary disease?
+73	find the  patients diagnosed with chronic kidney disease, stage iv (severe) whose drug type is main.
+74	provide the  patients who are younger than 31 years and have procedure long title as insertion of endotracheal tube.
+75	give me the nymber of patients with diagnosis icd9 code 99681 who stayed in hospital for more than 4 days.
+76	give me the  patients with ou route of drug administration born before the year 2107.
+77	among patients whose birth year is before 2107, which of them belonged to black/african american ethnic origin?
+78	calculate the  patients treated with benz100 and aged below 67.
+79	show me the  patients who were hospitalized for more than 34 days and were less than 86 years of age.
+80	which of the patients with item id 50976 remained admitted in hospital for more than 16 days?
+81	which dead patients who were discharged had initial insertion of transvenous leads [electrodes] into atrium and ventricle?
+82	which are the  patients whose admission year is before 2133 and procedure icd9 code is 4513?
+83	which patients have been diagnosed with type 1 diabetes with neurological manifestations not stated as uncontrolled?
+84	find the  medicare health insurance patients who have body mass index less than 19, adult diagnoses.
+85	which patients under 77 years of age had a renal epithelial cells lab test done?
+86	among patients with cerebral aneurysm/sda as their primary disease, calculate the total  those born before the year 2173.
+87	the  patients with private insurance who had implant of pulsation balloon.
+88	give me the  delta lab test status patients who have been diagnosed with cyclic neutropenia.
+89	bring the  white-russian patients who have an id route of drug administration.
+90	calculate the  patients having exc/des hrt les endovasc and an unspecified death status.
+91	find the  patients with asian ethnic background who are aged less than 59 years.
+92	among patients admitted to emergency room, which of them had pneumonia?
+93	the  unmarried patients who have hispanic or latino ethnic background.
+94	provide the  patients diagnosed with mv collision nos-driver.
+95	which patients stayed in the hospital for more than 11 days and have discharge location as home?
+96	which patients diagnosed with paroxysmal ventricular tachycardia have a hematology lab test category?
+97	which of the male patients were diagnosed with old myocardial infarction?
+98	calculate the total  patients who had sm bowel endoscopy nec
+99	which  patients were given the drug oxycodone sr (oxycontin)?
+100	which male patients had unspecified erythematous condition?
+101	which patients born before the year 2170 had their joint fluid tested?
+102	give me the  patients for whom no information regarding location of admission is available.
+103	the  patients who have stayed in the hospital for more than 23 days with phenylephrine hcl.
+104	provide the  patients whose discharge location is short term hospital and admission year is before 2198
+105	among patients aged below 45, calculate the total  those to whom drug was adminitered via ih route?
+106	which patients are diagnosed with other staphylococcus pneumonia?
+107	which  patients below the age of 30 had lab test item id as 51001?
+108	the  patients born before 2156 who left against medical advice.
+109	give me the  white-russian ethnic background patients who have base type drug prescription.
+110	which patients are admitted under phys referral/normal delivery and procedured with venous cath nec?
+111	which patients have the drug code gent60pm?
+112	give the  patients whose admission location is clinic referral/premature and lab test item id is 51099.
+113	find the  patients diagnosed with acute venous embolism and thrombosis of deep vessels of proximal lower extremity have expired.
+114	which are the  black/haitian ethnic background patients who are diagnosed with myopia?
+115	which patients aged below 55 had closed fracture of skull's base with subarachnoid, subdural & extradural hemorrhage, and loss of consciousness for unspecified duration?
+116	which patients have stayed in the hospital for more than 2 days with sigmoid diverticulitis, colovestical fistula/sda?
+117	which are the total  patients who had sternal wound infection and lab test for blood gas?
+118	the  patients whose religion is romanian east. orth.
+119	which patients were tested for rheumatoid factor and discharged to home?
+120	which patients are with diagnosis icd9 code 78551?
+121	among patients having polyneuropathy in diabetes, which of them were male?
+122	provide the  patients whose ethnicity is black/african and had a lab test for amylase.
+123	let me know the  patients on venlafaxine xr drug prescription who are still alive.
+124	which of the patients with protein-cal malnutr nos were discharged to trsf within this facility?
+125	among patients admitted on phys referral/normal deli, calculate the  those who died in or before the year 2184.
+126	which patients with lab test item id 50976 passed away in or before the year 2133?
+127	which patients' procedure long title is thoracentesis and lab test category is hematology?
+128	which patients have the lope2 drug code?
+129	which patients diagnosed with alkalosis have been prescribed main drug type?
+130	the  patients whose diagnosis short title is status autm crd dfbrltr and drug route is im.
+131	which patients aged below 36 years have stayed in the hospital for more than 14 days?
+132	which male patients are diagnosed with injury to femoral nerve?
+133	which female patients are diagnosed with short title  depress psychosis-unspec?
+134	collect the list of patients with a chart time of 2151-12-28 15:30:00 on lab test.
+135	which are the total  patients treated with main drug who had hemorrhage complic proc?
+136	the  patients who have procedure icd9 code 8960.
+137	find the  patients whose lab test item id is 50935 and age is below 31 years.
+138	which patients aged less than 72 years have collagenase ointment prescription?
+139	which patients have been prescribed the drug with the drug code d12.5w250i?
+140	which female patients have been diagnosed with infectious mononucleosis?
+141	provide the the  black/african american patients born before 2076.
+142	find the  patients whose insurance is self pay and lab test name is platelet .
+143	tell me the  emergency hospital admission patients who have prescription for hydrocortisone cream 0.5%.
+144	provide the  patients who have angioedema primary disease.
+145	the  patients whose lab test abnormal status is abnormal and lab test name is triiodothyronine (t3).
+146	which patients are discharged from disch tran to psych hosp that are under age 77?
+147	which patients are divorced and use pr drug route?
+148	provide me with the  male patients who had diagnosis icd9 code 25002.
+149	which are the  emergency room hospital admitted patients who were diagnosed with other malignant lymphomas, unspecified site, extranodal and solid organ sites?
+150	which patients diagnosed as newborn stayed in the hospital for more than 29 days?
+151	calculate the  patients to whom neo*iv*clindamycin was administered
+152	which patients whose discharge location is rehab/distinct part hosp were diagnosed with myalgia and myositis nos?
+153	which patients who had a thoracentesis procedure were admitted to the hospital before 2180?
+154	which patients with an emergency admission type had the diagnosis icd9 code 56210?
+155	give me the  patients who were diagnosed with benign neoplasm of spinal meninges and admitted in hospital before 2158.
+156	let me know the  patients who had other open incisional hernia repair with graft or prosthesis and blood lab test.
+157	give the  patients admitted before the year 2174 whose drug route is dialys.
+158	which  patients were primarily diagnosed for overdose?
+159	provide the  patients whose procedure icd9 code is 309.
+160	which female patients have diagnosis icd9 code 41519?
+161	which are the  patients less than 77 years old who have had excision or destruction of other lesion or tissue of heart (open approach)?
+162	the  patients who were admitted before the year 2157 and whose procedure long title is endoscopic sphincterotomy and papillotomy.
+163	which are the  patients on promethazine hcl drug prescription who stayed in hospital for more than 5 days?
+164	which white patients have been diagnosed under icd9 code 7847?
+165	which are the  patients with snf discharge who stayed in the hospital for more than 15 days?
+166	the  clinic referred patients who had premature hospital admission with continuous invasive mechanical ventilation for less than 96 consecutive hours.
+167	find the  hispanic or latino-puerto rican ethnic background patients who had whole blood potassium lab test.
+168	which patients admitted before the year 2148 are diagnosed with left internal jugular vein thrombosis;left arm edema
+169	provide the  patients who have the admission location as transfer from hosp/extram and diagnosis icd9 code as 4820.
+170	which patients under the age of 58 had hemodialysis?
+171	calculate the total  newborn admitted on clinic referral/premature.
+172	look for the patients admitted before 2174 that were diagnosed with sepsis.
+173	which  patients diagnosed with acute kidney failure with lesion of tubular necrosis have the drug type base?
+174	give me the  office admissions who had s/p fall as their primary disease.
+175	which are the  patients who are diagnosed with short title chr syst/diastl hrt fail?
+176	which patients have been diagnosed with unspecified pseudomonas infection?
+177	among patients who had fever presenting with conditions classified elsewhere, which of them had clinical chemistry tests?
+178	which patients taking main drug type prescription have the diagnoses of hemiplegia, unspecified, affecting dominant side?
+179	provide the  patients with a diagnoses of personal history of other malignant neoplasm of rectum, rectosigmoid junction and anus and are still alive.
+180	which patients are admitted under emergency room admit and diagnosed with icd9 code 78559?
+181	which patients below 20 years of age have stayed in the hospital for more than 14 days?
+182	calculate the  patients less than 82 years with a bactss drug code.
+183	get the  patients admitted before 2184 who had an other body fluid lab test.
+184	provide the  patients diagnosed with bowel obstruction whose lab test fluid is blood.
+185	the  patients admitted before 2131 who had open biospy of soft tissue procedure.
+186	bring me the  patients with abdominal pain as their primary disease who died in or before 2186.
+187	which patients uses the drug code quet25?
+188	the  spanish speaking patients who had an alkaline phosphatase lab test.
+189	find the  patients with death status as 1 and drug name ceftriaxone.
+190	which patients with diagnoses icd9 code 99591 are below the age of 76?
+191	find the  patients who are divorced and their lab test name is sedimentation rate.
+192	the  patients having coronary artery disease/coronary artery bypass graft/sda primary disease.
+193	which patients have benz1i drug code?
+194	provide the  patients with the diagnoses of tricuspid valve disorders, specified as nonrheumtatic who have sc route of drug administration.
+195	provide the  patients whose lab test item id is 5148.
+196	give the  patients who are younger than 51 years with a drug name colchicine.
+197	which are the  patients still living who had one vascular stent insertion?
+198	bring me the  patients under 55 years of age who had wbc and other fluid lab test.
+199	which patients have sdh primary disease?
+200	which patients are with elective admission type and with procedure icd9 code 252?
+201	which english speaking patients had the procedure titled closed biopsy of skin and subcutaneous tissue?
+202	the  patients with lab test item id 51032 who were born before 2098.
+203	show me the  patients who are taking tramadol medication and were admitted in hospital before 2163.
+204	out of total  patients diagnosed with closed fracture of surgical neck of humerus, which of them belonged to hispanic or latino or puertorican ethnic origin?
+205	the  patients born before 2101 with a short title diagnosis of ac posthemorrhag anemia.
+206	provide the  patients that died and had a diagnosis short title of dmii neuro nt st uncntrl.
+207	which of the patients on urgent admission had a hospital stay of more than 4 days?
+208	which patients had the diagnosis short title cardiac arrest with a main drug type?
+209	get me the  patients with celo-vessicle fistula primary disease who died on or before 2179.
+210	the  patients with inpatient hospital admission who have lab test item id 51301.
+211	give me the  patients less than 62 years who are suffering from morbid obesity/sda as their primary disease.
+212	which are the  patients whose death status is 1 and hospital stay is more than 26 days?
+213	the  patients with procedure icd9 code 5732 who were hospitalized for more than 4 days.
+214	which patients are diagnosed with primary disease squamous cell carcinoma oral tongue/sda and born before 2170?
+215	which patients had candidiasis of mouth as their diagnosis long title?
+216	give the  patients whose admission location is clinic referral/premature and procedure long title is central venous catheter placement with guidance.
+217	tell me the  patients who had an other bronchoscopy procedure done.
+218	for which patients admitted before the year 2120 had a lab test for monos conducted?
+219	which patients admitted before 2111 have been discharged to home health care facility?
+220	provide the  male patients who had angioplasty of other non-coronary vessel(s).
+221	which are the  patients who died that use the drug d12.5w?
+222	give the  patients whose drug code is doxe0.5.
+223	which are the  patients less than 56 years who have hyperglycemia primary disease?
+224	which patients are diagnosed with primary disease sternal wound infection and tested under chemistry category in lab?
+225	which patients are admitted under elective type and followed the procedure icd9 code 3972?
+226	report the  patients with procedure icd9 code 5781 who were admitted in hospital before 2138.
+227	give the  patients whose primary disease is morbid obesity/sda and were admitted before the year 2184.
+228	which white-russian patients were given the drug glucagon/
+229	which patients on im route of drug administration have bone marrow transplant status diagnosis?
+230	give me the  patients whose discharge location is rehab/distinct part hosp and procedure long title is enteral infusion of concentrated nutritional substances.
+231	report the  patients admitted before 2108 who had continuous invasive mechanical ventilation for less than 96 consecutive hours.
+232	which patients have procedure icd9 code 12?
+233	which patients less than 81 years of age had primary disease as liver transplant?
+234	give the  newborns who were born before the year 2121.
+235	which patients are primarily diagnosed with liver transplant and tested for urine in lab?
+236	the  patients whose marital status is single and lab test name is tacrofk.
+237	get me the  patients with *lit language who had creatine kinase, mb isoenzyme lab test.
+238	which patients are admitted before the year 2164 and followed the procedure cardiac mapping?
+239	which are the  elective hospital admission patients who had urethral catheterization?
+240	which asian patients are less than 67 years of age?
+241	which of the patients who had a lab test for ascites remained admit in hospital for more than 11 days?
+242	get me the  dead patients who have a citalopram hydrobromide medication prescription.
+243	which are the  medicare patients who had clofarabine intravenous infusion?
+244	give me the  patients whose duration of hospital stay  is more than 10 days and discharge location is home.
+245	which patients with elective admission type were born before the year 2107?
+246	give the  black/haitian patients who were born before the year 2087.
+247	which are the  government health insurance patients who had a hemoglobin lab test?
+248	provide me the  patients admitted before 2167 who had percutaneous (endoscopic) jejunostomy pej procedure.
+249	which patients had the lab test chart time 2124-07-01 03:07:00?
+250	which are the  patients who had (aorto)coronary bypass of two coronary arteries and were admitted for more than 10 days?
+251	the  patients who have white ethnic background with a diagnosis icd9 code v4502.
+252	which patients stayed in hospital for more than 15 days and diagnosed with respiratory distress syndrome in newborn?
+253	which patients have procedure icd9 code 3806?
+254	provide the  patients who are widowed and their lab test item id is 50924.
+255	which patients below 71 years of age are diagnosed with procedures as the cause of abnormal reaction of patient, or of later complication, without mention of misadventure at time of procedure?
+256	provide me the  office admitted patients who have procedure icd9 code 3891.
+257	which patients aged below 68 were treated with valc60l?
+258	show me the  patients hospitalized for more than 6 days who have diagnoses icd9 code 60000.
+259	give the  patients whose diagnosis long title is diabetes with ophthalmic manifestations, type ii or unspecified type, not stated as uncontrolled and lab test abnormal status is abnormal.
+260	the  married patients who had an open liver biopsy procedure.
+261	which are the  elective hospital admission patients who were hospitalized for more than 11 days?
+262	which patients admitted to emergency had syncope telemetry as their primary disease?
+263	find the patients who have syncope telemetry as their primary disease.
+264	provide the  patients who had a procedure titled spinal tap that were admitted before the year 2190.
+265	which patients are diagnosed with primary disease left colon cancer and are below age 76?
+266	calculate the total  patients who had dmi renal nt st uncontrolled
+267	which patients are diagnosed with icd9 code 2749 and tested in lab under chemistry category?
+268	show me the  elective hospital admission patients who were hospitalized for more than 14 days.
+269	which male patients have drug code csa50i?
+270	which patients admitted before the year 2170 had liver transplant as the primary disease?
+271	which patients stayed in hospital for more than 1 day and were diagnosed with icd9 code 99859?
+272	which of the patients belonging to black/cape verdean ethnic origin were born before the year 2087?
+273	the  patients who have self pay insurance.
+274	find the female patients who have procedure icd9 code 3727.
+275	among patients who stayed in the hospital for more than 15 days, which of them had a lab test for homocysteine?
+276	which patients have the diagnoses short title as retention urine nos?
+277	which of the newborn patients received additive thrapy?
+278	which patients with lab test item id 50998 were admitted before 2127?
+279	which of the patients with hypoxia were aged below 51?
+280	give the  patients diagnosed with sternal wound infection and born before the year 2085.
+281	calculate the  patients with personality disorder nos who had a hospital stay for more than 5 days.
+282	which patients diagnosed with malig nneo brain nec are tested for urine in lab?
+283	which  patients who underwent hemodialysis were discharged at home health care?
+284	give me the  patients less than 89 years who have been diagnosed with candidiasis of vulva and vagina.
+285	provide the  patients having main type drug prescription who have coronary atherosclerosis of unspecified type of vessel, native or graft, diagnoses.
+286	which elective hospital admission patients have procedure icd9 code 3613?
+287	which  patients whose lab test fluid is cerebrospinal fluid (csf) were born before 2060?
+288	which of the patients belonging to black/cape verdean ethnic origin were born before 2080?
+289	which are the  patients who have stayed in the hospital and were prescribed preservative free heparin sodium?
+290	list the  black/haitian married patients.
+291	which patients have stayed in the hospital for more than 34 days with a drug route both eyes?
+292	get the  patients who died in or before 2132 and were less than 72 years of age.
+293	which are the  patients with drug code ris1l?
+294	which patients are diagnosed with icd9 code 9600 have an additive drug type?
+295	which patients less than 89 years are diagnosed with benzodiazepine-based tranquilizers causing adverse effects in therapeutic use?
+296	give the  patients whose admission location is transfer from hosp/extram and procedure long title is continuous intra-arterial blood gas monitoring.
+297	which patients died and were diagnosed with sec neuroend tumor-liver?
+298	which patients are born before 2109 and diagnosed with mitral/aortic val insuff?
+299	provide me the  patients who have been diagnosed with unspecified erythematous condition and have stayed in hospital for more than 7 days.
+300	which black/haitian patients have phenylephrine medication prescription?
+301	the  patients whose procedure title is radical neck dissection, unilateral and lab test category is blood gas.
+302	tell me the  patients on main drug type prescription who were diagnosed with cardiac complications, not elsewhere classified.
+303	the  widow patients who have procedure icd9 code 8960.
+304	which patients prescribed with base drug type have been diagnosed with von willebrand's disease?
+305	which patients had gentamicin lab test?
+306	which patients aged below 70 years had the diagnosis short title hemochromatos-rbc-trans
+307	which patients with diagnoses icd9 code 5601 stayed in hospital for more than 9 days?
+308	which patients are born before the year 2156 and diagnosed with chrnc hpt c wo hpat coma?
+309	which patients with a lab test category of blood gas are diagnosed with icd9 code v1000?
+310	which patients younger than 50 years of age were admitted before the year 2112?
+311	give the  patients whose admission type is newborn and lab test category is blood gas.
+312	get me the  patients on id route of drug administration who were hospitalized for more than 27 days.
+313	the  patients who had automated reticulocyte  lab test done and were discharged to skilled nursing facility.
+314	to which black/african american patients was dextrose 50% administered?
+315	give me the  patients taking main drug type prescription who have diagnoses of other specified disorders resulting from impaired renal tubular function.
+316	which patients diagnosed with ac post hemorrhag anemia are administered via ng drug route?
+317	provide the  emergency hospital admission patients with diagnoses icd9 code 99811.
+318	which are the  patients with primary disease neoplasm of uncertain behavior of other lymphatic and hematopoietic tissues/bone marrow transplant who were admitted before 2197?
+319	which of the patients had other shock without mention of trauma?
+320	which patients born before year 2085 had s/p fall as their primary disease?
+321	which patients are admitted before the year 2154 and diagnosed with dmii oth uncntrld?
+322	calculate the  patients with diagnosis prim cardiomyopathy nec who had emergency hospital admission.
+323	which patients are diagnosed for pyelonephritis nos?
+324	give me the  patients who have been diagnosed with unspecified pleural effusion and were admitted on an emergency basis.
+325	give me the  patients with diagnoses icd9 code 28522 who were discharged dead/expired.
+326	the  patients whose admission type is emergency and lab test name is rbc, pleural.
+327	which patients of age less than 81 years have been given the drug metd10?
+328	calculate the  elective hospital admission patients who had a cerebrospinal fluid test done.
+329	which are the  patient whose primary disease is congestive heart failure and year of death is before 2168?
+330	get the  patients who were admitted urgently with phys referral/normal deli as admission location.
+331	which patients are diagnosed with malignant carcinoid tumour of the rectum and tested under category hematology in lab?
+332	provide the  patients whose marital status is married and drug route is  sl.
+333	calculate the total  patients diagnosed with icd9 code 6826 who had abnormal lab test results
+334	which patients below 77 years of age have had the procedure with short title radiotherapeutic proc nec?
+335	which are the  female patients who are suffering from sternal wound infection as their primary disease?
+336	which  patients with elective admission type had hemodialysis?
+337	which patients with icd9 code 5732 received im therapy?
+338	which patients born before the year 2146 had lab test item id 51067?
+339	which are the total  male patients diagnosed with icd9 code 99592?
+340	find the  inpatient hospital admitted patients who were born before 2134.
+341	which are the  married patients with lab test item id 51382?
+342	give the  patients whose lab test item id 51221 and lab test result is delta.
+343	which patients who stayed in the hospital for more than 17 days were diagnosed with defibrination syndrome?
+344	which patients are discharged to rehab/distinct part hosp and diagnosed with coronary heart disease?
+345	provide the  patients born before the year 2064 who had procedure icd9 code 3142.
+346	which patients had the diagnosis short title hyperpotassemia and drug type main?
+347	give me the  patients less than 79 years who have procedure icd9 code 9703.
+348	find the  patients primarily diagnosed with neoplasm of uncertain behavior of other lymphatic and hamatopoiteic tissues /bone marrow transplant and their drug route is dialys.
+349	which are the  patients who were admitted for more than 6 days in hospital and discharged to snf?
+350	which patients who follow christian scientist religion had a lab test reticulocyte , manual?
+351	which are the  clinic referral patients prematurely admitted to hospital who were born before the year 2031?
+352	give me the  patients admitted before 2194 who were diagnosed with dysphagia nec.
+353	which of the patients diagnosed with icd9 code 4464 were treated with base drug?
+354	which protestant quaker religious background patients had a methemoglobin lab test?
+355	which patients are admitted under urgent admission type and lab tested for item id 50808?
+356	which are the  patients on tp route of drug administration who are diagnosed with acute on chronic combined systolic and diastolic heart failure?
+357	which of the male patients had icd9 code 5856?
+358	give the  patients whose lab test name is lactate and religion is jehovah's witness.
+359	which patients admitted and transferred from hosp/extram are below 58 years of age?
+360	which  patients that died had ruq pain?
+361	which patients are below 77 years of age and used acetaminophen-caff-butalbital?
+362	which of the male patients had hyperacusis?
+363	among patients treated with topi100, calculate the  patients aged below 31?
+364	which patients aged below 85 years are black/haitian?
+365	which patients who had spinal tap were admitted before 2158?
+366	get me the  hispanic or latino-puerto rican patients who were born before 2074.
+367	the  patients whose primary disease is hypertension;rule out coronary artery disease/cardiac cath and drug route is sc.
+368	which patients admitted to emergency had opn rt hemicolectomy nec?

@@ -1,0 +1,2234 @@
+[
+  {
+    "question": "give me the time at which patient with patient id 81923 was admitted to hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"81923\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "let me know the ethnic background and the name of patient with patient id 81923.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\",DEMOGRAPHIC.\"ETHNICITY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"81923\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "Provide the age and language spoken for the subject id 8990.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"8990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "Specify the admission type of patient id 8990 and duration of stay in the hospital",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"8990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "specify the insurance and death status of patient id 8990?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"8990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "what is the discharge time and procedure for the patient id 8990?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"8990\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "tell me the time of discharge and name of patient with patient id 3369.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3369\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3369.0
+  },
+  {
+    "question": "specify the religion and marital status of patient id 3369.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3369\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3369.0
+  },
+  {
+    "question": "For patient id 3369, specify the death status and date. ",
+    "sql_query": "SELECT DEMOGRAPHIC.\"EXPIRE_FLAG\",DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3369\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3369.0
+  },
+  {
+    "question": "provide the admission time of subject id 94762.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"94762\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "find the age and name of patient with patient id 94762.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\",DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"94762\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "what is the date of death and discharge time of the patient id 94762?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOD\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"94762\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "for patient id 94762, specify the time of admission and discharge",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"94762\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "what is the insurance for patient id 990?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 990.0
+  },
+  {
+    "question": "tell me the age and marital status of patient with patient id 990.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 990.0
+  },
+  {
+    "question": "give the birthdate and gender of subject id 990.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 990.0
+  },
+  {
+    "question": "what is the admission type and discharge location of subject id 990?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 990.0
+  },
+  {
+    "question": "Subject id 990 is diagnosed with which icd9 code and admission type?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 990.0
+  },
+  {
+    "question": "find the primary disease and diagnoses icd9 code of subject id 990.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 990.0
+  },
+  {
+    "question": "What was the diagnosis of patient id 990 and when he did he die?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOD\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 990.0
+  },
+  {
+    "question": "specify the admission type for subject id 9271",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9271\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9271.0
+  },
+  {
+    "question": "tell me the death date for the patient with patient id 9271.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9271\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9271.0
+  },
+  {
+    "question": "specify the gender and language of patient id 9271",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9271\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9271.0
+  },
+  {
+    "question": "For patient id 9271, specify the location of the admission with the time ",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9271\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9271.0
+  },
+  {
+    "question": "find the admission location and diagnoses of subject id 9271.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9271\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9271.0
+  },
+  {
+    "question": "specify type of admission and discharge time of patient id 42820",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"42820\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "mention the discharge time and diagnosis icd9 code of subject id 42820.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"42820\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "tell me long title and icd9 code of diagnoses for patient with patient id 42820.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"42820\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "tell me the age and birth date of patient with patient id 29767.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"DOB\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"29767\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 29767.0
+  },
+  {
+    "question": "give the diagnoses and admission time of subject id 29767.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"29767\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 29767.0
+  },
+  {
+    "question": "get the gender and preferred spoken language for the patient with patient id 74345.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"74345\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74345.0
+  },
+  {
+    "question": "let me know the prescribed drug and primary disease of patient with patient id 10317.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PRESCRIPTIONS.\"DRUG\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"10317\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "find out the procedure icd9 code and drug name of patient with patient id 10317.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PRESCRIPTIONS.\"DRUG\" FROM PROCEDURES INNER JOIN PRESCRIPTIONS on PROCEDURES.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE PROCEDURES.\"SUBJECT_ID\" = \"10317\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "give me the short title of procedure and the type of drug prescribed to patient with patient id 10317.",
+    "sql_query": "SELECT PROCEDURES.\"SHORT_TITLE\",PRESCRIPTIONS.\"DRUG_TYPE\" FROM PROCEDURES INNER JOIN PRESCRIPTIONS on PROCEDURES.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE PROCEDURES.\"SUBJECT_ID\" = \"10317\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "tell me the type of admission and status of death for patient with patient id 25167.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"25167\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "what is the death staus and procedure of patient id 25167?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"EXPIRE_FLAG\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"25167\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "for patient id 25167 specify both, the location of admission and discharge",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"25167\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "tell me the time of admission and primary disease of patient with patient id 25167.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"25167\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "specify the age of patient id 31066 and language he/she speaks",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"31066\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 31066.0
+  },
+  {
+    "question": "let me know the short title of procedure and diagnoses icd9 code of patient with patient id 31066.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"31066\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 31066.0
+  },
+  {
+    "question": "what is the procedure icd9 code and procedure long title of subject id 31066?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"LONG_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"31066\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 31066.0
+  },
+  {
+    "question": "what is the marital status and gender of the patient id 99936?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"99936\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 99936.0
+  },
+  {
+    "question": "for how many days was the patient with patient id 1121 admitted in hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "tell me the age and religious background of patient with patient id 1121.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "specify the gender and religion of patient id 1121",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "specify the primary disease and gender of patient id 1121",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "give the death status and duration of hospital stay for subject id 1121.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "what is the admission location and procedure icd9 code for patient id 1121?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",PROCEDURES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "specify the admission location of patient id 9575",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "give the procedure description of subject id 9575.",
+    "sql_query": "SELECT PROCEDURES.\"LONG_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "what is the age of subject id 9575 and his/her duration of stay in hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "Let me know the gender and health insurance of the patient with patient id 9575.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "for patient id 9575, specify the duration of hospital stay and death status.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "Specify the diagnosis and time of admission of patient id 9575",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "specify the age and language of patient id 93033",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"93033\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 93033.0
+  },
+  {
+    "question": "what is the dicharge time and diagnosis icd9 code of the patient id 93033?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"93033\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 93033.0
+  },
+  {
+    "question": "find the name of subject id 66411.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "find out the death date for the patient with patient id 66411.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "specify the age and marital status of patient id 66411",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "get me the time and type of admission for the patient with patient id 66411.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "find out the time of admission and days for which patient with patient id 66411 stayed in hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "name the type of admission and location of discharge for the patient with patient id 17772.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17772\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "what is the primary disease and diagnosis short title of subject id 17772?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17772\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "what is the days of hospital stay of subject id 17519?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17519\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17519.0
+  },
+  {
+    "question": "what is the diagnosis short title of subject id 17519?",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"17519\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17519.0
+  },
+  {
+    "question": "let me know the age and religious background of patient with patient id 17519.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17519\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17519.0
+  },
+  {
+    "question": "provide the duration of hospital stay and death status of subject id 17519.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17519\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17519.0
+  },
+  {
+    "question": "what is the marital status and religion of patient id 71798?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"71798\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "what is the primary disease and discharge time of the patient id 71798?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"71798\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "let me know the icd9 code of diagnoses and procedure for patient with patient id 71798.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",PROCEDURES.\"ICD9_CODE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"71798\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "Find out the religion of the patient with patient id 26746.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"26746\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 26746.0
+  },
+  {
+    "question": "provide the disease and discharge time of subject  id 26746.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"26746\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 26746.0
+  },
+  {
+    "question": "report the long title of procedure and procedure ic9 code for patient with patient id 26746.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"LONG_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"26746\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 26746.0
+  },
+  {
+    "question": "look for the short title of procedure and health insurance of patient with patient id 92796.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"92796\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 92796.0
+  },
+  {
+    "question": "what is the diagnosis icd9 and diagnosis long title of subject id 92796?",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"92796\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 92796.0
+  },
+  {
+    "question": "tell me the long title of both diagnoses and procedure of patient with patient id 92796.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"LONG_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"92796\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 92796.0
+  },
+  {
+    "question": "tell me the discharge time and days for which patient with patient id 45962 was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"45962\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 45962.0
+  },
+  {
+    "question": "Look for the location and time of admission for the patient with patient id 45962.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"45962\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 45962.0
+  },
+  {
+    "question": "which ethnic background does the patient with patient id 7578 belong to?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\",DEMOGRAPHIC.\"ETHNICITY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "let me know the primary disease and name of the patient with patient id 7578.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "what is the date of birth and death status of subject id 7578?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "find the death status and days for which patient with patient id 7578 was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "find the diagnosis icd9 code for patient id 7578 and the number of days of his hospital stay.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "how old is the patient with patient id 14755?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "what is the procedure icd9 code for the patient id 14755?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "what is the date of birth and religion of patient no. 14755?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "For patient id 14755, specify the type of admission along with the primary disease",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "what is the days of hospital stay and admission time of subject id 14755?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "Report to me the short title of diagnoses and total days of hospital stay of patient with patient id 28588.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"28588\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 28588.0
+  },
+  {
+    "question": "tell me the diagnoses icd9 code and short title of diagnoses for patient with patient id 28588.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"28588\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 28588.0
+  },
+  {
+    "question": "for patient id 18351, specify the primary disease and icd9 code.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"18351\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 18351.0
+  },
+  {
+    "question": "what is the procedure done for the patient id 23733?",
+    "sql_query": "SELECT PROCEDURES.\"LONG_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"23733\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "what is the days of hospital stay and death status of subject id 23733?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"23733\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "let me know both the short title and long tilte of diagnoses for patient with patient id 23733.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"23733\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "provide the long title of diagnoses and short title of procedure for patient with patient id 23733.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"SHORT_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"23733\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "what is the language of subject id 12220?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"12220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 12220.0
+  },
+  {
+    "question": "Give the admission location of subject id 12220.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"12220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 12220.0
+  },
+  {
+    "question": "which primary disease is the patient with patient id 12220 suffering from?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"12220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 12220.0
+  },
+  {
+    "question": "show the admission type and primary disease of subject id 12220.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"12220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 12220.0
+  },
+  {
+    "question": "What is the primary disease and procedure of the patient id 12220?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"12220\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 12220.0
+  },
+  {
+    "question": "what is the days of hospital stay and procedure icd9 code of subject id 65982?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",PROCEDURES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"65982\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 65982.0
+  },
+  {
+    "question": "what is the diagnosis icd9 code and diagnosis long title of subject id 65982?",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"65982\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 65982.0
+  },
+  {
+    "question": "report the icu stay id of patient with patient id 18112.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"ICUSTAY_ID\" FROM PRESCRIPTIONS WHERE PRESCRIPTIONS.\"SUBJECT_ID\" = \"18112\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "what is the admission location and discharge location of the patient id 64208?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "what is the discharge location and discharge time of patient id 64208?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "provide the admission time as well as the discharge time of subject id 64208.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "for patient id 64208, specify the time of admission and icd9 code.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "tell me the type of admission and days for which patient with patient id 5027 was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"5027\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "what is the diagnosis icd9 code and diagnosis short title of subject id 43220?",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"43220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "mention the admission type and death status of subject id 22999.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22999\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "what is the discharge location of subject id 76508?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"76508\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "find the age and gender of subject id 76508.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"76508\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "give the age of subject id 83678.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"83678\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "for patients id 83678, specify the time and type of admission",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"83678\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "what is the primary disease and procedure icd9 code of subject id 74463?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"74463\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "give the procedure icd9 code and procedure description of subject id 74463.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"74463\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "specify the icu stay of patient id 22377",
+    "sql_query": "SELECT PRESCRIPTIONS.\"ICUSTAY_ID\" FROM PRESCRIPTIONS WHERE PRESCRIPTIONS.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "show me the admission and discharge location of subject id 22377.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "tell me the type and time of admission of the patient with patient id 4333.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"4333\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "What is the admission time and for how many days did the subject id 4333 stay in the hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"4333\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "Let me know the death status and health insurance under which the patient with patient id 4333 was covered.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"4333\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "Bring me the procedure icd9 code and short title of the procedure for the patient with patient id 4333.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"4333\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "find the diagnoses and procedure name for subject id 4342.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"4342\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 4342.0
+  },
+  {
+    "question": "what is the diagnoses and diagnosis detail of the patient id 4342?",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"4342\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4342.0
+  },
+  {
+    "question": "tell me the name of the patient with patient id 3284.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3284\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3284.0
+  },
+  {
+    "question": "Find the insurance of subject id 3284.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3284\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3284.0
+  },
+  {
+    "question": "give me the diagnosis of subject id 9258.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "what is the age and ethnicity of patient id 9258?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"ETHNICITY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "look for the time of admission and primary disease for patient with patient id 9258.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "find out the short title of procedure along with the primary disease of patient with patient id 9258.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "what is the diagnosis icd9 code and diagnosis short title of the patient id 9258?",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "give the admission type of subject id 11221.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"11221\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 11221.0
+  },
+  {
+    "question": "specify icd9 code for patient antonio mccarthy",
+    "sql_query": "SELECT PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Antonio Mccarthy\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 26746.0
+  },
+  {
+    "question": "find out the short title of diagnoses and diagnoses icd9 code for patient michelle medina.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Medina\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "which language does patient jonathan wiggins speak?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jonathan Wiggins\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 45962.0
+  },
+  {
+    "question": "What is the procedure icd9 code and procedure long title of Jonathan Wiggins?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Jonathan Wiggins\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 45962.0
+  },
+  {
+    "question": "How many days did Morgan Mcgee stay in the hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Morgan Mcgee\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "which health insurance does the patient morgan mcgee have?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Morgan Mcgee\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "Let me know both the icd9 code and short title of the procedure for patient Morgan Mcgee.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Morgan Mcgee\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "Let me know on which date the patient Brian Taylor died.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Taylor\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74459.0
+  },
+  {
+    "question": "what is the code and name of the drug prescribed to frank gregory?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\",PRESCRIPTIONS.\"FORMULARY_DRUG_CD\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Frank Gregory\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 12220.0
+  },
+  {
+    "question": "provide me the long title of procedure for patient charles deshay.",
+    "sql_query": "SELECT PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Charles Deshay\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 4342.0
+  },
+  {
+    "question": "find the gender of subject name tiffany williams.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Tiffany Williams\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 92796.0
+  },
+  {
+    "question": "for patient kenneth koeller, specify diagnosis icd9 code with short title ",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Kenneth Koeller\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "What is the procedure icd9 code and procedure short title of Kenneth Koeller?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Kenneth Koeller\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "what is the diagnosis for patient name alice nixon?",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Alice Nixon\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "tell me the type of admission and diagnosis icd9 code for patient alice nixon.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Alice Nixon\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "which type of admission did patient kevin jones have?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Kevin Jones\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 28882.0
+  },
+  {
+    "question": "which drug is prescribed to the patient kevin jones?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Kevin Jones\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 28882.0
+  },
+  {
+    "question": "specify the primary disease of patient orville ford",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Orville Ford\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "give the disease name and procedure name for orville ford.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Orville Ford\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "What is the primary disease and drug route of Albers Bauer?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PRESCRIPTIONS.\"ROUTE\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Albert Bauer\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "for patient albert bauer, specify the type and name of drug he was treated with",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG_TYPE\",PRESCRIPTIONS.\"DRUG\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Albert Bauer\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "tell me short title of diagnosis and long title of procedure for patient thomas jeanbaptiste.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Jeanbaptiste\"",
+    "question_treqs_complexity": 3,
+    "patient_id": 81085.0
+  },
+  {
+    "question": "michelle skidmore is suffering from which primary disease?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Skidmore\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "let me know the long title of diagnoses for patient michelle skidmore.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Skidmore\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "For patient Michelle Skidmore, specify the icd9 code and lab tests conducted",
+    "sql_query": "SELECT PROCEDURES.\"SHORT_TITLE\",LAB.\"LABEL\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID INNER JOIN LAB on DEMOGRAPHIC.HADM_ID = LAB.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Skidmore\"",
+    "question_treqs_complexity": 3,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "Find the diagnoses of Rafael Stewart.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Rafael Stewart\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "find the primary disease and procedure name for rafael stewart.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Rafael Stewart\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "what is the admission time and discharge time of Bryant Johnson?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Bryant Johnson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "What is the lab test name and number of days of hospital stay for Roxanna Weaver?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",LAB.\"LABEL\" FROM DEMOGRAPHIC INNER JOIN LAB on DEMOGRAPHIC.HADM_ID = LAB.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Roxanna Weaver\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 14680.0
+  },
+  {
+    "question": "get me both the short title and long title of diagnoses for patient roxanna weaver.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Roxanna Weaver\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 14680.0
+  },
+  {
+    "question": "What is lab test abnormal status and lab test name of Roxana Weaver?",
+    "sql_query": "SELECT LAB.\"FLAG\",LAB.\"LABEL\" FROM DEMOGRAPHIC INNER JOIN LAB on DEMOGRAPHIC.HADM_ID = LAB.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Roxanna Weaver\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 14680.0
+  },
+  {
+    "question": "mention the time of admission and disgnosis short title of the patient robert clayton?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Robert Clayton\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 72353.0
+  },
+  {
+    "question": "What is the admission type and disease of patient name Brian Brock?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Brock\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "find the admission type and admission time of patient brian brock.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Brock\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "what is the name of the disease that dawn cooper is primarily suffering from? also find his admission type.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Dawn Cooper\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 19620.0
+  },
+  {
+    "question": "Specify the death status of the patient named Charles Nilsson",
+    "sql_query": "SELECT DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Charles Nilsson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3369.0
+  },
+  {
+    "question": "specify the age and gender of patient charles nilsson",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Charles Nilsson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3369.0
+  },
+  {
+    "question": "what is the admission time and discharge time for the patient name charles nilsson?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Charles Nilsson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3369.0
+  },
+  {
+    "question": "metion the age and primary disease of gonzalo wasson.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Gonzalo Wasson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5506.0
+  },
+  {
+    "question": "give the admission and discharge locations of gonzalo wasson.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Gonzalo Wasson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5506.0
+  },
+  {
+    "question": "What is the diagnosis icd9 code and diagnoses for Gonzalo Wasson?",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Gonzalo Wasson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 5506.0
+  },
+  {
+    "question": "What is the  diagnosis short title and diagnosis long title of Gonzalo Wasson?",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Gonzalo Wasson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 5506.0
+  },
+  {
+    "question": "find out the icu stay id of the patient colton andrade.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"ICUSTAY_ID\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Colton Andrade\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "what is the drug name and drug route of Colton Andrade?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\",PRESCRIPTIONS.\"ROUTE\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Colton Andrade\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "tell me the death status and number of days for which patient michael tyndall stayed in the hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michael Tyndall\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 93033.0
+  },
+  {
+    "question": "let me know the time of admission and primary disease of patient michael tyndall.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michael Tyndall\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 93033.0
+  },
+  {
+    "question": "what is the discharge location and time of the patient melinda miers?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Melinda Miers\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "provide the primary diagnoses and admission time for richard gundlach.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Richard Gundlach\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 67965.0
+  },
+  {
+    "question": "let me know the long title of procedure and time of discharge for patient richard gundlach.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Richard Gundlach\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 67965.0
+  },
+  {
+    "question": "find out the birth date and status of death for patient dominga garvin.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Dominga Garvin\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "mention the date of birth of subject name edward schafer.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Edward Schafer\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "find the gender and marital status of miguel hodges.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Miguel Hodges\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74345.0
+  },
+  {
+    "question": "provide the admission time and diagnoses of subject id 17772.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17772\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "what is the admission time and procedure icd9 code of the patient id 17772?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",PROCEDURES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17772\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "what is the death status and number of days the subject id 28588 has stayed in the hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"28588\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 28588.0
+  },
+  {
+    "question": "which ethnic background does patient with patient id 18351 belong to?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ETHNICITY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"18351\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18351.0
+  },
+  {
+    "question": "Specify both the admission and discharge time of patient ID 18112",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"18112\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "for patient id 72353, specify date of death with age",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"72353\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 72353.0
+  },
+  {
+    "question": "give the diagnoses long title and procedure long title of subject id 32418.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"LONG_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"32418\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "what is the admission type of subject id 64208?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "give the diagnosis of subject id 64208.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "familiarize me with the gender and death status of the patient with patient id 5027.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"5027\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "let me know the age of patient with patient id 43220.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"43220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "for how many days was the patient with patient id 22999 hospitalized?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22999\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "what is the admission location and discharge location of subject id 22999?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22999\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "Let me know the location and time of discharge for the patient with patient id 22999.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22999\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "For patient id 76508, specify the name of the primary disease and icd9 code",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"76508\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "what is the death status of subject id 83678?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"83678\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "let me know the icu stay id for patient with patient id 83678.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"ICUSTAY_ID\" FROM PRESCRIPTIONS WHERE PRESCRIPTIONS.\"SUBJECT_ID\" = \"83678\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "what is the diagnosis short title and procedure short title of subject id 83678?",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",PROCEDURES.\"SHORT_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"83678\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "what is the diagnosis and procedure for patient id 83678?",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"LONG_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"83678\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 83678.0
+  },
+  {
+    "question": "mention the diagnosis long title of subject id 74463.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"74463\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "Look for location and time of admission for the patient with patient id 22377.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "what is the admission time and lab test name of patient with patient id 22377?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",LAB.\"LABEL\" FROM DEMOGRAPHIC INNER JOIN LAB on DEMOGRAPHIC.HADM_ID = LAB.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "provide me the long title of diagnoses and procedure of patient with patient id 22377.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"LONG_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "which prescription drug does the patient with patient id 3284 take?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\" FROM PRESCRIPTIONS WHERE PRESCRIPTIONS.\"SUBJECT_ID\" = \"3284\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3284.0
+  },
+  {
+    "question": "specify the name & marital status of patient  id 3284",
+    "sql_query": "SELECT DEMOGRAPHIC.\"NAME\",DEMOGRAPHIC.\"MARITAL_STATUS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3284\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3284.0
+  },
+  {
+    "question": "what is the marital status and admission type of the patient with id 3284?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3284\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3284.0
+  },
+  {
+    "question": "let me know the marital status and the health insurance by which patient with patient id 3284 is covered.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"3284\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 3284.0
+  },
+  {
+    "question": "give the discharge time and procedure name for subject id 9258.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "what is the procedure icd9 code and name for the patient id 9258?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"LONG_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"9258\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "get me the name of the drug and the drug code that patient with patient id 11221 is taking.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\",PRESCRIPTIONS.\"FORMULARY_DRUG_CD\" FROM PRESCRIPTIONS WHERE PRESCRIPTIONS.\"SUBJECT_ID\" = \"11221\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 11221.0
+  },
+  {
+    "question": "for how many days did antonio mccarthy stay in the hospital and what was his primary disease?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Antonio Mccarthy\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 26746.0
+  },
+  {
+    "question": "find the time of admission and long title of diagnoses for patient antonio mccarthy.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Antonio Mccarthy\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 26746.0
+  },
+  {
+    "question": "tell me the age and days for which patient michelle medina was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Medina\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "tell me the location and type of admission for patient michelle medina.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Medina\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "what is the admission location and diagnosis short title of subject name cynthia robinson?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Cynthia Robinson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "Bring me the long title of diagnoses and short title of procedures for the patient Cynthia Robinson.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Cynthia Robinson\"",
+    "question_treqs_complexity": 3,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "For how long did the patient Morgan Mcgee remain admitted in hospital? Also specify the death status",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Morgan Mcgee\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "when was patient morgan mcgee discharged? also specify his primary disease",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Morgan Mcgee\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "get me the dosage and code of drug taken by patient brian taylor.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"FORMULARY_DRUG_CD\",PRESCRIPTIONS.\"DRUG_DOSE\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Taylor\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74459.0
+  },
+  {
+    "question": "tell me jennifer fulgham's time of admission to hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jennifer Fulgham\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "Give the primary disease and admission time of Jennifer Fulgham.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jennifer Fulgham\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "Find the age and insurance of Claude Chipman.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Claude Chipman\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 73843.0
+  },
+  {
+    "question": "let me know the birth date and gender of patient claude chipman.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Claude Chipman\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 73843.0
+  },
+  {
+    "question": "tell me the time of admission and long title of diagnoses of patient claude chipman.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Claude Chipman\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 73843.0
+  },
+  {
+    "question": "what is the gender and language of the patient david trammell?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"David Trammell\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 19187.0
+  },
+  {
+    "question": "tell me the gender and religious background of patient david trammell.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"David Trammell\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 19187.0
+  },
+  {
+    "question": "specify the duration of hospital stay and admission time of patient herlinda thomson",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Herlinda Thomson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 11221.0
+  },
+  {
+    "question": "What is the admission time of  Wayne Shelton?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Wayne Shelton\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "which type of insurance does wayne shelton have and is he still alive?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Wayne Shelton\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "specify birthdate and death status of patient mary davis",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Mary Davis\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 97079.0
+  },
+  {
+    "question": "specify the birthdate and primary disease of patient mary davis",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Mary Davis\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 97079.0
+  },
+  {
+    "question": "find the duration of hospital stay and admission location of mary davis.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Mary Davis\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 97079.0
+  },
+  {
+    "question": "give the discharge time and duration of hospital stay for mary davis.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Mary Davis\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 97079.0
+  },
+  {
+    "question": "what is the procedure icd9 code ad procedure of Mary Davis?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Mary Davis\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 97079.0
+  },
+  {
+    "question": "What is the marital status of Kenneth Koeller?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Kenneth Koeller\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "provide me with gender and marital status of patient kenneth koeller.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Kenneth Koeller\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "for patient kenneth koeller, specify the diagnosis and duration of hospital stay ",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Kenneth Koeller\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 4333.0
+  },
+  {
+    "question": "find me the age and status of death of patient alice nixon.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Alice Nixon\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "which type of admission did patient evelyn lawrence have?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Evelyn Lawrence\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "let me know the type and location of admission for patient kevin jones.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Kevin Jones\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 28882.0
+  },
+  {
+    "question": "What is the admission type and primary disease of Kevin Jones?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Kevin Jones\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 28882.0
+  },
+  {
+    "question": "give the birthdate and death status of jesse ran.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jesse Ran\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "specify the gender and insurance of patient jesse ran",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jesse Ran\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "find out the preferred language and time of admission of the patient jesse ran.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"LANGUAGE\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jesse Ran\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17772.0
+  },
+  {
+    "question": "tell me the type of admission and long title of procedure for patient dawn brill.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Dawn Brill\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 990.0
+  },
+  {
+    "question": "what is the drug name of subject name darlene martin?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Darlene Martin\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "for how many days did darlene martin stay in the hospital and what was her drug route?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",PRESCRIPTIONS.\"ROUTE\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Darlene Martin\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "let me know the short title of procedure of patient thomas nazario.",
+    "sql_query": "SELECT PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Nazario\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "what is the discharge location and discharge time of Thomas Nazario?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Nazario\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "Specify the admission location of patients named Michelle Skidmore along with the primary disease",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Skidmore\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "what is the procedure icd9 code and procedure of Michelle Skidmore?",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Skidmore\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "look for discharge time of patient bryant johnson.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Bryant Johnson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "tell me the admission type and diagnoses icd9 code for patient anna johnson.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Anna Johnson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "let me know the location of admission and days for which walter locher stayed in hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Walter Locher\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "what is the date of birth and admission time of patient name fernando wontor?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Fernando Wontor\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "For how long  was the patient Robert Clayton admitted in hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Robert Clayton\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 72353.0
+  },
+  {
+    "question": "mention the procedure short title of subject named robert clayton.",
+    "sql_query": "SELECT PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Robert Clayton\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 72353.0
+  },
+  {
+    "question": "what is the death status and the number of days of hospital stay of the patient named robert clayton?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Robert Clayton\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 72353.0
+  },
+  {
+    "question": "what is the primary disease and admission time for the patient gonzalo wasson?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Gonzalo Wasson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5506.0
+  },
+  {
+    "question": "tell me the death status and number of days for which patient glen tanner was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Glen Tanner\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 65982.0
+  },
+  {
+    "question": "provide the discharge time of caren obrien.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Caren Obrien\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 99936.0
+  },
+  {
+    "question": "specify the admission type of patient richard gundlach",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Richard Gundlach\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 67965.0
+  },
+  {
+    "question": "give me the diagnosis icd9 code of the patient named richard gundlach.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Richard Gundlach\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 67965.0
+  },
+  {
+    "question": "Find out the location and time of admission for Richard Gundlach.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Richard Gundlach\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 67965.0
+  },
+  {
+    "question": "let me know the short title of diagnoses as well as diagnoses icd9 code for patient richard gundlach.",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Richard Gundlach\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 67965.0
+  },
+  {
+    "question": "What is the admission location and diagnosis short title of Dominga Garvin?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Dominga Garvin\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "specify icd9 code and admission location of patient dominga garvin",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Dominga Garvin\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "provide the discharge location of edward schafer.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Edward Schafer\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "what is the gender and insurance of subject id 81923?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"81923\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "provide the age and the health insurance that covers patient with patient id 31066.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"31066\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 31066.0
+  },
+  {
+    "question": "get the number of days of hospital stay and discharge time for subject id 9575.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "tell me the birth date and diagnoses icd9 code for patient with patient id 66411.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "what is the date of birth and diagnoses short title of subject id 66411?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"66411\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 66411.0
+  },
+  {
+    "question": "specify the birthdate and gender of patient id 17519",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17519\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17519.0
+  },
+  {
+    "question": "let me know the gender of religious background of patient with patient id 71798.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"RELIGION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"71798\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "what is the primary disease for the patient id 92796?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"92796\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 92796.0
+  },
+  {
+    "question": "for patient id 92796, specify birthdate and marital status.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"DOB\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"92796\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 92796.0
+  },
+  {
+    "question": "what is the insurance of patient id 7578?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "tell  me the diagnoses icd9 code and type of admission for the patient with patient id 28588.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"28588\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 28588.0
+  },
+  {
+    "question": "familiarize me with the long title of procedure and primary disease of the patient morgan mcgee.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Morgan Mcgee\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "name the type of drug patient evelyn lawrence is on.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG_TYPE\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Evelyn Lawrence\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "What is the primary disease and diagnosis short title of Michelle Skidmore?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Skidmore\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "Specify the primary disease of patient Bryant Johnson along with the icd9 code",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Bryant Johnson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9258.0
+  },
+  {
+    "question": "Specify icd9 code of patient Dawn Cooper along with the admission type. ",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Dawn Cooper\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 19620.0
+  },
+  {
+    "question": "specify the admission location of subject name edward schafer.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Edward Schafer\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "mention the diagnosis long title and procedure icd9 code of subject id 7578.",
+    "sql_query": "SELECT DIAGNOSES.\"LONG_TITLE\",PROCEDURES.\"ICD9_CODE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "find the diagnosis icd9 code and the number of days the patient with patient id 28588 stayed in hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"28588\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 28588.0
+  },
+  {
+    "question": "For how many days did patient with id 18112 stay in the hospital? ",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"18112\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "what is the days of hospital stay and lab test name of subject id 32418?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",LAB.\"LABEL\" FROM DEMOGRAPHIC INNER JOIN LAB on DEMOGRAPHIC.HADM_ID = LAB.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"32418\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "what is the primary disease and procedure long title of subject id 22377?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "find out the short title of diagnoses and long title of diagnoses for patient with patient id 11221.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",PROCEDURES.\"LONG_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"11221\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 11221.0
+  },
+  {
+    "question": "let me know the short title of diagnoses and time of discharge for patient cynthia robinson.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Cynthia Robinson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "report the primary disease and number of days for which patient claude chipman was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Claude Chipman\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 73843.0
+  },
+  {
+    "question": "specify the icd9 code and parimary disease for patient claude chipman",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Claude Chipman\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 73843.0
+  },
+  {
+    "question": "Give the admission time and discharge time of Alice Nixon.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Alice Nixon\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "what is the admission time and diagnoses short title of subject name thomas nazario?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Nazario\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "let me know the time of admission and long title of diagnoses for patient roxanna weaver.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\",DIAGNOSES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Roxanna Weaver\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 14680.0
+  },
+  {
+    "question": "let me know the birth date and primary disease of patient brian brock.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Brock\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "specify the primary disease and icd9 code of patient caren obrien",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Caren Obrien\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 99936.0
+  },
+  {
+    "question": "What is the days of hospital stay and diagnosis short title of Miguel Hodges?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Miguel Hodges\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74345.0
+  },
+  {
+    "question": "find the insurance of subject  id 81923.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"81923\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "Let me know the birth date and long title of procedure for patient with patient id 81923.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"81923\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 81923.0
+  },
+  {
+    "question": "for patient id 62296, specify the type of admission and icd9 code",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DIAGNOSES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"62296\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "when did patient id 62296 die? specify date of death and insurance",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"62296\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 62296.0
+  },
+  {
+    "question": "tell me the primary disease and health insurance of patient with patient id 8990.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"8990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "Find the time of admission and date of death for the patient with patient id 94762.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOD\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"94762\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "What is the gender and number of days of hospital stay of subject id 990?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"990\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 990.0
+  },
+  {
+    "question": "find out the short title of diagnoses and health insurance by which patient with patient id 9271 is covered.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"INSURANCE\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9271\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9271.0
+  },
+  {
+    "question": "specify gender and death status of patient id 42820",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"42820\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "what is the discharge location and icu stay id of subject id 42820?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\",PRESCRIPTIONS.\"ICUSTAY_ID\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"42820\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 42820.0
+  },
+  {
+    "question": "for patient id 29767, specify the time of admission and marital status. ",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"29767\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 29767.0
+  },
+  {
+    "question": "which medication is prescribed to patient with patient id 74345?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"DRUG\" FROM PRESCRIPTIONS WHERE PRESCRIPTIONS.\"SUBJECT_ID\" = \"74345\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74345.0
+  },
+  {
+    "question": "find the procedure icd9 code for patient with patient id 10317.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"10317\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "Tell me the type of admission and status of death of the patient with patient id 10317.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"10317\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 10317.0
+  },
+  {
+    "question": "tell me short title of both diagnoses and procedure for patient with patient id 25167.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",PROCEDURES.\"SHORT_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"25167\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 25167.0
+  },
+  {
+    "question": "tell me the age and gender of patient with patient id 31066.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"GENDER\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"31066\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 31066.0
+  },
+  {
+    "question": "For patient id 31066, specify the time and location of admission",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"31066\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 31066.0
+  },
+  {
+    "question": "find out the admission time and days for which patient with patient id 99936 stayed in hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"99936\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 99936.0
+  },
+  {
+    "question": "what is the admission type and death status of patient id 1121?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"1121\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "provide me the primary disease and diagnosis short title of the patient with patient id 9575.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"9575\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 9575.0
+  },
+  {
+    "question": "find out the age and admission type for patient with patient id 93033.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"AGE\",DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"93033\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 93033.0
+  },
+  {
+    "question": "When was patient id 17519 admitted? Specify the time and location.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"17519\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 17519.0
+  },
+  {
+    "question": "provide the duration of hospital stay and procedure title for subject id 71798.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"71798\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 71798.0
+  },
+  {
+    "question": "specify the gender and icd9 code for patient  id 7578",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"7578\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "specify icd9 code for patient id 14755",
+    "sql_query": "SELECT PROCEDURES.\"LONG_TITLE\" FROM PROCEDURES WHERE PROCEDURES.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "Tell me the short title of diagnoses and the primary disease the patient with patient id 14755 is suffering from.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"14755\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 14755.0
+  },
+  {
+    "question": "let me know the discharge location and number of days for which patient with patient id 18351 was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"18351\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18351.0
+  },
+  {
+    "question": "what is the diagnosis icd9 code and diagnosis long title of subject id 18351?",
+    "sql_query": "SELECT DIAGNOSES.\"ICD9_CODE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"18351\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18351.0
+  },
+  {
+    "question": "let me know both the short title and long title of diagnoses for the patient with patient id 18351.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",DIAGNOSES.\"LONG_TITLE\" FROM DIAGNOSES WHERE DIAGNOSES.\"SUBJECT_ID\" = \"18351\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18351.0
+  },
+  {
+    "question": "which type of admission did the patient with patient id 43220 have?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"43220\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "on which date was the patient with patient id 74463 born?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"74463\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "give me the lab test item id and lab test abnormal status of patient with patient id 22377.",
+    "sql_query": "SELECT LAB.\"ITEMID\",LAB.\"FLAG\" FROM LAB WHERE LAB.\"SUBJECT_ID\" = \"22377\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22377.0
+  },
+  {
+    "question": "tell me the discharge location and the number of days for which patient with patient id 11221 stayed in hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"11221\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 11221.0
+  },
+  {
+    "question": "get me the type of admission and primary disease for which jonathan wiggins was admitted.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Jonathan Wiggins\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 45962.0
+  },
+  {
+    "question": "which language does the patient charles deshay prefer?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Charles Deshay\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 4342.0
+  },
+  {
+    "question": "Find the admission location for Alice Nixon.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Alice Nixon\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "What is the admission location and discharge location of Thomas Jeanbaptiste?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\",DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Jeanbaptiste\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 81085.0
+  },
+  {
+    "question": "which language did patient anna johnson speak?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"LANGUAGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Anna Johnson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "Tell me which primary disease the patient Walter Locher is suffering from and whether he is still alive or not.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"EXPIRE_FLAG\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Walter Locher\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 94762.0
+  },
+  {
+    "question": "let me know if patient brian brock is married or unmarried.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Brock\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "Tell me the procedure icd9 code and the primary disease for the patient Brian Brock.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",PROCEDURES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Brian Brock\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "find out the time at which patient dawn cooper was discharged.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Dawn Cooper\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 19620.0
+  },
+  {
+    "question": "let me know the procedure icd9 code and days for which patient jeff jarvis was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",PROCEDURES.\"ICD9_CODE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Jeff Jarvis\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 1121.0
+  },
+  {
+    "question": "what is the date of birth of the patient id 18351?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"18351\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 18351.0
+  },
+  {
+    "question": "which lab test has been ordered for patient with patient id 19187?",
+    "sql_query": "SELECT LAB.\"LABEL\" FROM LAB WHERE LAB.\"SUBJECT_ID\" = \"19187\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 19187.0
+  },
+  {
+    "question": "what is the gender and death status of subject id 32418?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"EXPIRE_FLAG\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"32418\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 32418.0
+  },
+  {
+    "question": "for how many days did the subject id 64208 stay in the hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"64208\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 64208.0
+  },
+  {
+    "question": "find out the time of admission and gender of patient with patient id 5027.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"GENDER\",DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"5027\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 5027.0
+  },
+  {
+    "question": "tell me the short title of diagnoses and days for which patient with patient id 74463 was hospitalized.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DAYS_STAY\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"SUBJECT_ID\" = \"74463\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "Let me know the short title of diagnoses and procedures for the patient with patient id 74463.",
+    "sql_query": "SELECT DIAGNOSES.\"SHORT_TITLE\",PROCEDURES.\"SHORT_TITLE\" FROM DIAGNOSES INNER JOIN PROCEDURES on DIAGNOSES.HADM_ID = PROCEDURES.HADM_ID WHERE DIAGNOSES.\"SUBJECT_ID\" = \"74463\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "let me know the type of admission and primary disease of patient michelle medina.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Michelle Medina\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 8990.0
+  },
+  {
+    "question": "What is the date of birth and primary disease of David Trammell?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"David Trammell\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 19187.0
+  },
+  {
+    "question": "for patient herlinda thomson, specify the time of admission",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMITTIME\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Herlinda Thomson\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 11221.0
+  },
+  {
+    "question": "tell me the short title and icd9 code of procedure for patient alice nixon.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Alice Nixon\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 76508.0
+  },
+  {
+    "question": "what is the marital status and age of the patient name orville ford?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"MARITAL_STATUS\",DEMOGRAPHIC.\"AGE\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Orville Ford\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 22999.0
+  },
+  {
+    "question": "Theresa Vedovelli is primarily suffering from which disease?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Theresa Vedovelli\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 28588.0
+  },
+  {
+    "question": "From which location was the patient Thomas Nazario admitted to the hospital?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Nazario\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "let me know both the short title and icd9 code of procedure of patient thomas nazario.",
+    "sql_query": "SELECT PROCEDURES.\"ICD9_CODE\",PROCEDURES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Thomas Nazario\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 43220.0
+  },
+  {
+    "question": "what is the icu stay id and drug name of the patient anna johnson?",
+    "sql_query": "SELECT PRESCRIPTIONS.\"ICUSTAY_ID\",PRESCRIPTIONS.\"DRUG\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Anna Johnson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "provide the drug code and drug dose for anna johnson.",
+    "sql_query": "SELECT PRESCRIPTIONS.\"FORMULARY_DRUG_CD\",PRESCRIPTIONS.\"DRUG_DOSE\" FROM DEMOGRAPHIC INNER JOIN PRESCRIPTIONS on DEMOGRAPHIC.HADM_ID = PRESCRIPTIONS.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Anna Johnson\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 18112.0
+  },
+  {
+    "question": "let me know the birth date and short title of diagnoses for patient fernando wontor.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Fernando Wontor\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74463.0
+  },
+  {
+    "question": "what is the discharge location for the patient annette haris?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DISCHARGE_LOCATION\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Annette Harris\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 7578.0
+  },
+  {
+    "question": "find the primary disease of robert clayton.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Robert Clayton\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 72353.0
+  },
+  {
+    "question": "tell me the type of admission and number of days for which patient glen tanner stayed in hospital.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"ADMISSION_TYPE\",DEMOGRAPHIC.\"DAYS_STAY\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Glen Tanner\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 65982.0
+  },
+  {
+    "question": "tell me the birth date and primary disease of patient caren obrien.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"DIAGNOSIS\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Caren Obrien\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 99936.0
+  },
+  {
+    "question": "let me know the birth date and death date of patient caren obrien.",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DOB\",DEMOGRAPHIC.\"DOD\" FROM DEMOGRAPHIC WHERE DEMOGRAPHIC.\"NAME\" = \"Caren Obrien\"",
+    "question_treqs_complexity": 1,
+    "patient_id": 99936.0
+  },
+  {
+    "question": "give the procedure description of dominga garvin.",
+    "sql_query": "SELECT PROCEDURES.\"LONG_TITLE\" FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Dominga Garvin\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 23733.0
+  },
+  {
+    "question": "what is the primary disease and diagnosis for the patient name miguel hodges?",
+    "sql_query": "SELECT DEMOGRAPHIC.\"DIAGNOSIS\",DIAGNOSES.\"SHORT_TITLE\" FROM DEMOGRAPHIC INNER JOIN DIAGNOSES on DEMOGRAPHIC.HADM_ID = DIAGNOSES.HADM_ID WHERE DEMOGRAPHIC.\"NAME\" = \"Miguel Hodges\"",
+    "question_treqs_complexity": 2,
+    "patient_id": 74345.0
+  }
+]
