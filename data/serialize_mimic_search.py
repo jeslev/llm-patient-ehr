@@ -276,7 +276,7 @@ def get_system_prompts() -> Dict[str, str]:
         Dictionary mapping instruction type to system prompt
     """
     return {
-        'non_guided': """You are an extremely helpful healthcare assistant, analyze the following passage and the query.
+        'non_guided': """You are an extremely helpful healthcare assistant, decide if a patient profile matches the query.
         
         Passage: {}
 
